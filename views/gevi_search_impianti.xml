@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<openerp>
+    <data>
+        <record id="gevi_search_impianti_inherit" model="ir.ui.view">
+            <field name="name">gevi.search.impianti.inherit</field>
+            <field name="model">gevi.impianti.impianto.search</field>
+            <field name="inherit_id" ref="gevi_impianti.search_gevi_impianti_categoria_view"/>
+
+            <field name="arch" type="xml">
+                <xpath expr="//filter[@name='impianto_mat]" position="after">
+                    <filter string="Messa a terra CEI-64-8" name="impianto_mat_cei648"
+                            domain="[[u'impianto_categoria_id', u'ilike', u'CEI']]"
+                            help="Filtra per Messa a Terra CEI-64-8"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</openerp>
