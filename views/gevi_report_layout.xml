@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<openerp>
+    <data>
+        <template id="gevi_report_layout_footer_inherit" inherit_id="gevi_report.external_layout_footer">
+            <xpath expr="//t[@t-name='gevi_report.external_layout_footer']" position="replace">
+                <t t-name="gevi_report.external_layout_footer">
+                    <div class="footer">
+                        <!-- ante 2020-03-08 -->
+                        <!-- <t t-if="('data_verbale' in doc.fields_get() and doc.data_verbale and doc.data_verbale &lt;= '2020-03-08') or ('data_stipula' in doc.fields_get() and doc.data_stipula and doc.data_stipula &lt;= '2020-03-08')">
+
+                            <div class="row">
+                                <div class="col-xs-7" style="letter-spacing: 1px;">
+                                    <span style="text-align:left; font-weight:bold; font-size:12px;">ICOVER - ISTITUTO COLLAUDI VERIFICHE E RICERCHE S.r.l. a s.u.</span>
+                                    <br />
+                                    <span style="text-align:left; font-size:10px;">
+                                        <t t-if="'data_verbale' in doc">
+                                            <t t-if="doc.data_verbale == False">Sede Legale: Piazza della Libertà, 10 - 00192 ROMA</t>
+                                            <t t-if="doc.data_verbale != False">
+                                                <t t-if="doc.data_verbale &gt; '2017-07-02'">Sede Legale: Piazza della Libertà, 10 - 00192 ROMA</t>
+                                                <t t-if="doc.data_verbale &lt; '2017-07-03'">Sede Legale: Piazza Irnernio, 68 - 00165 ROMA</t>
+                                            </t>
+                                        </t>
+                                        <t t-if="'data_stipula' in doc">
+                                            <t t-if="doc.data_stipula == False">Sede Legale: Piazza della Libertà, 10 - 00192 ROMA</t>
+                                            <t t-if="doc.data_stipula != False">
+                                                <t t-if="doc.data_stipula &gt; '2017-07-02'">Sede Legale: Piazza della Libertà, 10 - 00192 ROMA</t>
+                                                <t t-if="doc.data_stipula &lt; '2017-07-03'">Sede Legale: Piazza Irnernio, 68 - 00165 ROMA</t>
+                                            </t>
+                                        </t>
+                                        <br />
+                                        www.icoversrl.it - email:info@icoversrl.it
+                                        <br />
+                                        <br />
+                                        <span style="font-size:7,5px;">Mpg10-3 rev02</span>
+                                    </span>
+                                </div>
+                                <div class="col-xs-2">
+                                    <p>
+                                        <br />
+                                        <img src="/gevi_report/static/src/img/numero-verde.png" />
+                                    </p>
+                                </div>
+                                <div class="col-xs-3" style="text-align:right; font-size:10px; letter-spacing: 1px;">
+                                    <span>
+                                        P.IVA 02860290788
+                                        <br />
+                                        Cap. Soc. € 100.000,00 i.v.
+                                        <br />
+                                        Registro delle Imprese di Roma
+                                        <br />
+                                        R.E.A. n. 1185570
+                                    </span>
+                                </div>
+                            </div>
+
+                        </t>
+
+                -->
+                        <!-- post 2020-03-08 -->
+                        <!--<t t-if="('data_verbale' in doc.fields_get() and doc.data_verbale and doc.data_verbale &gt; '2020-03-08') or ('data_stipula' in doc.fields_get() and doc.data_stipula and doc.data_stipula &gt; '2020-03-08')">
+
+                            <div class="row">
+                                <div class="col-xs-5 " style="">
+                                    <span style="color: #2d549e; text-align:left; font-weight:bold; font-size:10px;">
+                                        ICOVER – ISTITUTO COLLAUDI E VERIFICHE S.p.A.
+                                    </span>
+                                    <br/>
+                                    <span style="color: #2d549e; text-align:left; font-size:10px;">
+                                        <span style="font-style: italic;">Sede Legale:</span>
+                                        <span style="font-style: normal;"> Piazza della Libertà, 10 - 00192 ROMA</span>
+                                    </span>
+                                    <br/>
+                                    <span style="color: #2d549e; text-align:left; font-size:10px;">
+                                        Tel 06 6625216 – 06 3218529   Fax 06 56561854
+                                    </span>
+                                </div>
+                                <div class="col-xs-1">
+                                    <p>
+                                        <br/>
+                                        <img src="/gevi_report/static/src/img/numero-verde.png" />
+                                    </p>
+                                </div>
+
+                                <div class="col-xs-3"  style=" color: #2d549e; text-align:right; font-size:10px;">
+
+                                    <span>
+                                        <br />
+                                        www.icoverspa.it
+                                        <br />
+                                        e-mail: info@icoverspa.it
+                                    </span>
+                                </div>
+                                <div class="col-xs-3" style=" color: #2d549e; text-align:right; font-size:10px;">
+                                    <span>
+                                        P.IVA 15503551002
+                                        <br />
+                                        Capitale sociale € 160.000,00 i.v.
+                                        <br />
+                                        Registro delle Imprese di Roma
+                                        <br />
+                                        R.E.A. n. 1595016
+                                    </span>
+                                </div>
+                            </div>
+
+                        </t>
+                -->
+                        <!-- common di base spa -->
+                        <!-- <t t-if="('data_verbale' not in doc.fields_get() and 'data_stipula' not in doc.fields_get())"> -->
+
+                        <div class="row">
+                            <div class="col-xs-5 " style="">
+                                <span style="color: #2d549e; text-align:left; font-weight:bold; font-size:10px;">
+                                    ICOVER – ISTITUTO COLLAUDI E VERIFICHE S.p.A.
+                                </span>
+                                <br/>
+                                <span style="color: #2d549e; text-align:left; font-size:10px;">
+                                    <span style="font-style: italic;">Sede Legale:</span>
+                                    <span style="font-style: normal;"> Piazza della Libertà, 10 - 00192 ROMA</span>
+                                </span>
+                                <br/>
+                                <span style="color: #2d549e; text-align:left; font-size:10px;">
+                                    Tel 06 6625216 – 06 3218529   Fax 06 56561854
+                                </span>
+                            </div>
+                            <div class="col-xs-1">
+                                <p>
+                                    <br/>
+                                    <img src="/gevi_report/static/src/img/numero-verde.png" />
+                                </p>
+                            </div>
+
+                            <div class="col-xs-3"  style=" color: #2d549e; text-align:right; font-size:10px;">
+
+                                <span>
+                                    <br />
+                                    www.icoverspa.it
+                                    <br />
+                                    e-mail: info@icoverspa.it
+                                </span>
+                            </div>
+                            <div class="col-xs-3" style=" color: #2d549e; text-align:right; font-size:10px;">
+                                <span>
+                                    P.IVA 15503551002
+                                    <br />
+                                    Capitale sociale € 160.000,00 i.v.
+                                    <br />
+                                    Registro delle Imprese di Roma
+                                    <br />
+                                    R.E.A. n. 1595016
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- </t>-->
+
+                        <div style="text-align:center; font-size:10px;">
+                            <ul class="list-inline">
+                                <li>Pagina:</li>
+                                <li>
+                                    <span class="page" />
+                                </li>
+                                <li>/</li>
+                                <li>
+                                    <span class="topage" />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </t>
+            </xpath>
+        </template>
+
+        <template id="gevi_report_layout_header_inherit" inherit_id="gevi_report.external_layout_header">
+            <xpath expr="//t[@t-name='gevi_report.external_layout_header']" position="replace">
+                <t t-name="gevi_report.external_layout_header">
+                    <div class="header">
+                        <div class="row">
+                            <div class="col-xs-8 headerfont" style="font-size:10px;">
+                                <div>
+                                    <img src="/gevi_report/static/src/img/logo-icover_spa.png" />
+                                    <p style="color: #2d549e;">
+                                        <br />
+                                        Organismo notificato n.1996
+                                        <br />
+                                        Organismo abilitato ai sensi del DPR 462/01
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-4" style="font-size:10px; text-align:center">
+                                <div>
+                                    <p style="padding-bottom:0.5em; margin:0; font-weight: bold;">
+                                        <img width="80%" src="/gevi_report/static/src/img/logo-accredia_spa.png" />
+                                        <br />
+                                        <br />
+
+                                        ISP n°044 E - PRD n°213 B
+                                    </p>
+                                    <p style="padding: 0; margin: -0.25em;">
+                                        Membro degli Accordi di Mutuo Riconoscimento
+                                    </p>
+                                    <p style="padding: 0; margin: -0.25em;">
+                                        EA, IAF e ILAC
+                                    </p>
+                                    <p style="padding: 0; margin: -0.25em;">
+                                        Signatory of EA, IAF and ILAC
+                                    </p>
+                                    <p style="padding: 0; margin: -0.25em;">
+                                        Mutual Recognition Agreements
+                                    </p>
+                                </div>
+
+                            </div>
+                            <!--
+                                            <div class="col-xs-4" style="font-size:10px; text-align:center">
+                                                <div>
+                                                    <p style="padding-bottom:0.5em; margin:0; font-weight: bold;">
+                                                        <img width="80%" src="/gevi_report/static/src/img/logo-accredia_spa.png" />
+                                                        <br />
+                                                        <br />
+                                                        <t t-if="'Generico' in doc.impianto_categoria_name or 'Elettr' in doc.impianto_categoria_name or 'Oleo' in doc.impianto_categoria_name">
+                                                                PRD n°213 B
+                                                            </t>
+                                                        <t t-if="'Messa' in doc.impianto_categoria_name or 'Scariche' in doc.impianto_categoria_name">
+                                                                ISP n°044 E
+                                                            </t>
+                                                    </p>
+                                                    <p style="padding: 0; margin: -0.25em;">
+                                                        Membro degli Accordi di Mutuo Riconoscimento
+                                                    </p>
+                                                   <p style="padding: 0; margin: -0.25em;">
+                                                        EA, IAF e ILAC
+                                                    </p>
+                                                    <p style="padding: 0; margin: -0.25em;">
+                                                        Signatory of EA, IAF and ILAC
+                                                    </p>
+                                                    <p style="padding: 0; margin: -0.25em;">
+                                                        Mutual Recognition Agreements
+                                                    </p>
+                                                </div>
+
+                                            </div>
+                            -->
+
+                            <!-- intestazione SRL-->
+                            <!--
+                                        <div class="col-xs-8 headerfont" style="font-size:9px;">
+                                            <div>
+                                                <img src="/gevi_report/static/src/img/logo-icover_spa.png"/>
+                                                <p>
+                                                    <br/>Organismo notificato n.1996
+                                                    <br/>Organismo abilitato ai sensi del DPR 462/01
+                                                    <br/>(D.M. del 12/10/2012 pubblicato su G.U. n.280 del 30/11/2012)
+                                                </p>
+                                            </div>
+                                        </div>
+                            -->
+
+                            <!-- vecchia intestazione -->
+                            <!--
+                                        <div class="col-xs-3">
+                                            <img t-if="company.logo" t-att-src="'data:image/png;base64,%s' % company.logo" style="max-height: 45px;"/>
+                                        </div>
+                                        <div class="col-xs-9 text-right" style="margin-top:20px;" t-field="company.rml_header1"/>
+                                    </div>
+                                    <div class="row zero_min_height">
+                                        <div class="col-xs-12">
+                                            <div style="border-bottom: 1px solid black;"/>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-3" name="company_address">
+                                            <div t-field="company.partner_id" t-field-options="{&quot;widget&quot;: &quot;contact&quot;, &quot;fields&quot;: [&quot;address&quot;, &quot;name&quot;], &quot;no_marker&quot;: true}" style="border-bottom: 1px solid black;"/>
+                                        </div>
+                            -->
+                        </div>
+                    </div>
+                </t>
+            </xpath>
+        </template>
+    </data>
+</openerp>
